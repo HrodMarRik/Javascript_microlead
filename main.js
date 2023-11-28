@@ -17,6 +17,7 @@ function openCity(evt, cityName) {
 
   document.getElementById(cityName).style.display = "block";
 
-  event.currentTarget.className += " active";
+  evt.currentTarget.className += " active";
 
 }
+
