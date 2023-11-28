@@ -10,41 +10,36 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Microlead - Dropdown Javascript</title>
+    <title>Microlead - Tabs navigation Javascript</title>
   </head>
 
   <body>
-    <h1>Microlead - Dropdown Javascript</h1>
-    
-    <div class="sidenav">
-      <a href="#about">A propos</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-      <button class="dropdown-btn">
-        Dropdown
-        <i class="fa fa-caret-down"></i>
+    <h1>Microlead - Tabs navigation Javascript</h1>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Londres')">
+        Londres
       </button>
-      <div class="dropdown-container">
-        <a href="#">Lien 1</a>
-        <a href="#">Lien 2</a>
-        <a href="#">Lien 3</a>
-      </div>
-      <a href="#others">Autres</a>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+      <button class="tablinks" onclick="openCity(event, 'Madrid')">
+        Madrid
+      </button>
     </div>
 
-    <div class="main">
-      <h2>Microlead - nav Dropdown JS</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. At sint
-        blanditiis odio sed placeat veniam quasi minus modi nostrum quidem,
-        totam repellendus suscipit sequi magnam beatae facere! At, ullam
-        dolorum?
-      </p>
+    <div id="Londres" class="tabcontent">
+      <h3>Londres</h3>
+      <p>Londres est la capitale de l'Angleterre.</p>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+      <h3>Paris</h3>
+      <p>Paris est la capitale de la France.</p>
+    </div>
+
+    <div id="Madrid" class="tabcontent">
+      <h3>Madrid</h3>
+      <p>Madrid es la capitale de l'Espagne.</p>
     </div>
 
     <script src="main.js" defer></script>
