@@ -5,6 +5,7 @@
 function openCity(evt, cityName) {
   console.log(evt, cityName);
   // code
+  
   var tabcontents = document.getElementsByClassName("tabcontent");
   for (var i = 0; i < tabcontents.length; i++) {
     tabcontents[i].style.display = "none";
